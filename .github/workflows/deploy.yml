@@ -22,7 +22,7 @@ jobs:
         working-directory: ./src
 
       - name: Build Angular
-        run: npm run build -- --configuration production --base-href RoadRescueAI/roadsiderescueai-website
+        run: npm run build -- --configuration production --base-href /roadsiderescueai-website/
         working-directory: ./src
 
       - name: Deploy to GitHub Pages
