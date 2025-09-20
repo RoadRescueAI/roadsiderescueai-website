@@ -28,9 +28,9 @@ import { DividerModule } from 'primeng/divider';
       <section class="hero-section hero-background section-padding">
         <div class="container text-center">
           <h1 class="hero-title">
-            Get in <span class="text-gradient">Touch</span>
+            Get in Touch
           </h1>
-          <p class="hero-subtitle text-secondary">
+          <p class="hero-subtitle">
             Need help or have questions? We're here for you 24/7
           </p>
         </div>
@@ -46,8 +46,8 @@ import { DividerModule } from 'primeng/divider';
               </div>
               <div class="emergency-info">
                 <h2>Emergency Hotline</h2>
-                <p class="emergency-number text-gradient">1-800-RESCUE-AI</p>
-                <p class="emergency-subtitle text-secondary">
+                <p class="emergency-number">1-800-RESCUE-AI</p>
+                <p class="emergency-subtitle">
                   Available 24/7 for immediate roadside assistance
                 </p>
               </div>
@@ -160,8 +160,8 @@ import { DividerModule } from 'primeng/divider';
                   </div>
                   <div class="contact-item-content">
                     <h4>Emergency Hotline</h4>
-                    <p class="text-secondary">1-800-RESCUE-AI</p>
-                    <small class="text-secondary">24/7 Emergency Support</small>
+                    <p>1-800-RESCUE-AI</p>
+                    <small>24/7 Emergency Support</small>
                   </div>
                 </div>
 
@@ -171,8 +171,8 @@ import { DividerModule } from 'primeng/divider';
                   </div>
                   <div class="contact-item-content">
                     <h4>Email Support</h4>
-                    <p class="text-secondary">support@roadrescueai.com</p>
-                    <small class="text-secondary">Response within 2 hours</small>
+                    <p>support@roadrescueai.com</p>
+                    <small>Response within 2 hours</small>
                   </div>
                 </div>
 
@@ -182,8 +182,8 @@ import { DividerModule } from 'primeng/divider';
                   </div>
                   <div class="contact-item-content">
                     <h4>Headquarters</h4>
-                    <p class="text-secondary">123 Innovation Drive<br>San Francisco, CA 94105</p>
-                    <small class="text-secondary">Mon-Fri 9AM-6PM PST</small>
+                    <p>123 Innovation Drive<br>San Francisco, CA 94105</p>
+                    <small>Mon-Fri 9AM-6PM PST</small>
                   </div>
                 </div>
 
@@ -193,8 +193,8 @@ import { DividerModule } from 'primeng/divider';
                   </div>
                   <div class="contact-item-content">
                     <h4>Live Chat</h4>
-                    <p class="text-secondary">Available on our website</p>
-                    <small class="text-secondary">Mon-Fri 8AM-8PM PST</small>
+                    <p>Available on our website</p>
+                    <small>Mon-Fri 8AM-8PM PST</small>
                   </div>
                 </div>
               </div>
@@ -219,7 +219,7 @@ import { DividerModule } from 'primeng/divider';
         <div class="container">
           <div class="section-header text-center mb-5">
             <h2>Service Coverage Areas</h2>
-            <p class="text-secondary">We're rapidly expanding across major metropolitan areas</p>
+            <p>We're rapidly expanding across major metropolitan areas</p>
           </div>
           
           <div class="service-areas-content">
@@ -227,8 +227,8 @@ import { DividerModule } from 'primeng/divider';
               <div class="map-container">
                 <div class="map-placeholder">
                   <i class="pi pi-map map-icon"></i>
-                  <p class="text-secondary">Interactive Service Area Map</p>
-                  <small class="text-secondary">Currently serving 50+ cities nationwide</small>
+                  <p>Interactive Service Area Map</p>
+                  <small>Currently serving 50+ cities nationwide</small>
                 </div>
               </div>
             </div>
@@ -242,7 +242,7 @@ import { DividerModule } from 'primeng/divider';
                   </div>
                   <div class="area-info">
                     <h4>{{ area.city }}</h4>
-                    <p class="text-secondary">{{ area.coverage }}</p>
+                    <p>{{ area.coverage }}</p>
                   </div>
                   <div class="area-status">
                     <span [class]="'status-badge status-' + area.status">{{ area.statusText }}</span>
@@ -251,10 +251,10 @@ import { DividerModule } from 'primeng/divider';
               </div>
               
               <div class="expansion-note">
-                <p class="text-secondary">
+                <p>
                   <i class="pi pi-info-circle mr-2"></i>
                   Don't see your area? We're expanding rapidly. 
-                  <a href="#" class="text-gradient">Request service in your area</a>
+                  <a href="#">Request service in your area</a>
                 </p>
               </div>
             </div>
@@ -267,7 +267,7 @@ import { DividerModule } from 'primeng/divider';
         <div class="container">
           <div class="section-header text-center mb-5">
             <h2>Multiple Ways to Get Help</h2>
-            <p class="text-secondary">Choose the support option that works best for you</p>
+            <p>Choose the support option that works best for you</p>
           </div>
           
           <div class="support-grid">
@@ -276,7 +276,7 @@ import { DividerModule } from 'primeng/divider';
                 <i [class]="option.icon"></i>
               </div>
               <h3>{{ option.title }}</h3>
-              <p class="text-secondary">{{ option.description }}</p>
+              <p>{{ option.description }}</p>
               <div class="support-meta">
                 <span class="availability">{{ option.availability }}</span>
                 <span class="response-time">{{ option.responseTime }}</span>
@@ -312,8 +312,8 @@ import { DividerModule } from 'primeng/divider';
     }
 
     .emergency-card {
-      background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.2));
-      border: 2px solid var(--secondary-color);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 16px;
       padding: 3rem;
     }
@@ -327,11 +327,11 @@ import { DividerModule } from 'primeng/divider';
 
     .emergency-icon {
       font-size: 4rem;
-      color: var(--secondary-color);
+      color: #ffffff;
     }
 
     .emergency-info h2 {
-      color: white;
+      color: #ffffff;
       margin-bottom: 0.5rem;
     }
 
@@ -367,7 +367,7 @@ import { DividerModule } from 'primeng/divider';
     .form-field label {
       margin-bottom: 0.5rem;
       font-weight: 500;
-      color: white;
+      color: #ffffff;
     }
 
     .form-actions {
@@ -387,14 +387,14 @@ import { DividerModule } from 'primeng/divider';
     }
 
     .info-card {
-      background: var(--surface-a);
+      background: rgba(255, 255, 255, 0.05);
       padding: 2rem;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .info-card h3 {
-      color: white;
+      color: #ffffff;
       margin-bottom: 2rem;
       font-size: 1.5rem;
     }
@@ -408,14 +408,14 @@ import { DividerModule } from 'primeng/divider';
 
     .contact-item-icon {
       font-size: 1.5rem;
-      color: var(--primary-color);
+      color: #ffffff;
       width: 3rem;
       text-align: center;
       flex-shrink: 0;
     }
 
     .contact-item-content h4 {
-      color: white;
+      color: #ffffff;
       margin-bottom: 0.5rem;
     }
 
@@ -424,14 +424,14 @@ import { DividerModule } from 'primeng/divider';
     }
 
     .faq-links {
-      background: var(--surface-a);
+      background: rgba(255, 255, 255, 0.05);
       padding: 2rem;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .faq-links h4 {
-      color: white;
+      color: #ffffff;
       margin-bottom: 1.5rem;
     }
 
@@ -442,18 +442,17 @@ import { DividerModule } from 'primeng/divider';
     }
 
     .faq-link {
-      color: var(--text-color-secondary);
+      color: rgba(255, 255, 255, 0.7);
       text-decoration: none;
       display: flex;
       align-items: center;
       padding: 0.5rem;
       border-radius: 6px;
-      transition: all 0.3s ease;
     }
 
     .faq-link:hover {
-      background: rgba(0, 212, 255, 0.1);
-      color: var(--primary-color);
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
     }
 
     .service-areas-content {
@@ -469,8 +468,8 @@ import { DividerModule } from 'primeng/divider';
     }
 
     .map-placeholder {
-      background: var(--surface-a);
-      border: 2px dashed rgba(0, 212, 255, 0.3);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px dashed rgba(255, 255, 255, 0.3);
       border-radius: 12px;
       padding: 3rem 2rem;
       text-align: center;
@@ -483,12 +482,12 @@ import { DividerModule } from 'primeng/divider';
 
     .map-icon {
       font-size: 4rem;
-      color: var(--primary-color);
+      color: #ffffff;
       margin-bottom: 1rem;
     }
 
     .areas-list h3 {
-      color: white;
+      color: #ffffff;
       margin-bottom: 2rem;
       font-size: 1.5rem;
     }
@@ -504,7 +503,7 @@ import { DividerModule } from 'primeng/divider';
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      background: var(--surface-a);
+      background: rgba(255, 255, 255, 0.05);
       padding: 1.5rem;
       border-radius: 8px;
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -512,7 +511,7 @@ import { DividerModule } from 'primeng/divider';
 
     .area-icon {
       font-size: 1.5rem;
-      color: var(--primary-color);
+      color: #ffffff;
       width: 2.5rem;
       text-align: center;
       flex-shrink: 0;
@@ -523,7 +522,7 @@ import { DividerModule } from 'primeng/divider';
     }
 
     .area-info h4 {
-      color: white;
+      color: #ffffff;
       margin-bottom: 0.25rem;
     }
 
@@ -535,20 +534,20 @@ import { DividerModule } from 'primeng/divider';
     }
 
     .status-active {
-      background: rgba(34, 197, 94, 0.2);
-      color: #22c55e;
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
     }
 
     .status-expanding {
-      background: rgba(251, 191, 36, 0.2);
-      color: #fbbf24;
+      background: rgba(255, 255, 255, 0.05);
+      color: rgba(255, 255, 255, 0.8);
     }
 
     .expansion-note {
-      background: rgba(0, 212, 255, 0.1);
+      background: rgba(255, 255, 255, 0.05);
       padding: 1.5rem;
       border-radius: 8px;
-      border: 1px solid rgba(0, 212, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .expansion-note a {
@@ -562,7 +561,7 @@ import { DividerModule } from 'primeng/divider';
     }
 
     .support-card {
-      background: var(--surface-a);
+      background: rgba(255, 255, 255, 0.05);
       padding: 2.5rem;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -574,12 +573,12 @@ import { DividerModule } from 'primeng/divider';
 
     .support-icon {
       font-size: 3.5rem;
-      color: var(--primary-color);
+      color: #ffffff;
       margin-bottom: 1rem;
     }
 
     .support-card h3 {
-      color: white;
+      color: #ffffff;
       margin-bottom: 0.5rem;
     }
 
@@ -587,9 +586,9 @@ import { DividerModule } from 'primeng/divider';
       display: flex;
       justify-content: space-between;
       font-size: 0.9rem;
-      color: var(--text-color-secondary);
+      color: rgba(255, 255, 255, 0.7);
       padding: 1rem;
-      background: var(--surface-b);
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 6px;
     }
 

@@ -298,6 +298,11 @@ export class HeaderComponent {
       label: 'Contact',
       routerLink: '/contact',
       icon: 'pi pi-envelope'
+    },
+    {
+      label: 'Report Claim',
+      routerLink: '/report-claim',
+      icon: 'pi pi-file-edit'
     }
   ];
 
