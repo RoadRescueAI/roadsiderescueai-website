@@ -25,8 +25,20 @@ jobs:
         run: npm run build -- --configuration production --base-href /roadsiderescueai-website/
         working-directory: ./src
 
+      - name: Show build output (debug)
+        run: |
+          echo 'Listing ./src/dist'
+          ls -la ./src/dist || true
+          echo 'Listing ./src/dist/RoadRescueAiWebsite'
+          ls -la ./src/dist/RoadRescueAiWebsite || true
+          echo 'Listing ./src/dist/RoadRescueAiWebsite/browser'
+          ls -la ./src/dist/RoadRescueAiWebsite/browser || true
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./src/dist/RoadRescueAiWebsite
+          publish_dir: ./src/dist/RoadRescueAiWebsite/browser
+          publish_branch: gh-pages
+          allow_empty_commit: false
+          force_orphan: false
